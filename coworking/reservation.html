@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+     	<meta name ="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+	<title>RESERVATION</title>
+	  <link rel="stylesheet" type="text/css" href="asset/css/style2.css">
+	  <link rel="stylesheet" type="text/css" href="asset/css/flexsider.css">
+	  <link rel="stylesheet" type="text/css" href="asset/css/lightbox.css">
+    <script src="asset/js/app.js"></script>
+
+  </head>
+ <body>
+ 	<div class="haut">
+ 		
+ 	<h2>VOTRE RESERVATION</h2>
+ 	<h4> Avec l'offre Business, vous pouvez gérer de façon complète votre reservation gratuitement à n'importe quel moment. </h4>
+ 
+  <fieldset>
+        <legend>Informations personnelles</legend>
+      <label for="nom">Nom <em>*</em></label>
+      <!--placeholder: indication grisée 
+      //required: il faut renseigner le champs sinon la validation est bloquée
+      //autofocus: le curseur est positionné dans cette case au chargement de la page-->
+      <input id="nom" placeholder="Société" autofocus="" required=""><br>
+      <label for="telephone">Portable<em>*</em></label>
+      <!--type="tel": bascule le clavier sur un smartphone
+      // pattern: expression régulière à vérifier pour pouvoir valider-->
+      <input id="telephone" type="tel" placeholder="06xxxxxxxx" pattern="06[0-9]{8}"><br>
+    <label for="email">Email <em>*</em></label>
+      <input id="Your Email Address" placeholder="email" tabindex="2" required=""><fieldset>
+        <fieldset>
+      <label for="date">Espace de Réservation<em>*</em></label>
+    <FORM>
+<SELECT name="nom" size="1">
+  <OPTION> ---VIDE---
+  <OPTION> Espace NOVA 
+  <OPTION> Espace LOUANE
+  <OPTION> Espace JOULIN
+  <OPTION> Espace LINO
+  <OPTION> Espace TALLYS
+</SELECT>
+  </FORM>
+    </fieldset>
+      <label for="date">Date de Réservation<em>*</em></label>
+    <input type="date" name="anniversaire"></input>
+  </fieldset>
+   <label for="date">Durée de Réservation<em>*</em></label>
+   <input type="time" name="wakeup"></input>
+  </fieldset>
+      <label for="comments">Suggestion</label>
+      <textarea id="comments"></textarea>
+    </fieldset>
+  <p><input type="submit" value="Réserver"></p>
+
+    <p><input type="submit" value="Annuler"></p>
+      <p><input type="submit" value="Modifier"></p>
+
+  </form:form>
+
+</div>
+</form>
+ </body>
